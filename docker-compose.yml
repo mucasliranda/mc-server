@@ -17,4 +17,4 @@ services:
       # SERVER CONFIG
       MEMORY: '2G'
     volumes:
-      - '/home/mc-server:/data'
+      - '/home/lucas/mc-server/data:/data'
