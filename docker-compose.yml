@@ -1,0 +1,20 @@
+version: '1'
+services:
+  minecraft:
+    container_name: mc-server
+    image: itzg/minecraft-server
+    restart: 'unless-stopped'
+    ports:
+      - '25565:25565'
+    environment:
+      EULA: 'TRUE'
+      DIFFICULTY: 'normal'
+      MOTD: 'Welcome to my Minecraft Home Server'
+
+
+      VERSION: '1.16.5'
+
+      # SERVER CONFIG
+      MEMORY: '2G'
+    volumes:
+      - '/home/mc-server:/data'
